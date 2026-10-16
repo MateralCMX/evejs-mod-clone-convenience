@@ -8,7 +8,7 @@
   "changelog": "",
   "conflicts": [],
   "delisted": false,
-  "description": "远距离克隆无冷却、普通空间站多个克隆；保留费用、技能总上限和建筑限制。",
+  "description": "取消克隆跳跃冷却，允许在普通空间站存放多个克隆，方便切换植入体配置与活动地点。",
   "displayName": "克隆便利功能",
   "downloadUrls": [
     {
@@ -22,20 +22,17 @@
   ],
   "featured": false,
   "highlights": [
-    "克隆跳跃无冷却，角色属性与克隆列表倒计时同步清零，真实跳跃历史保留。",
-    "普通空间站可存放多个克隆，同站切换及跨站跳跃不会销毁其他停放克隆。",
-    "仍受技能总上限、安装/激活费用约束；玩家建筑限制及舰船/建筑确认保持原版。"
+    "克隆跳跃无需等待冷却。",
+    "普通空间站可以存放多个克隆。",
+    "同站切换或跨站跳跃时，保留其他停放的克隆。"
   ],
   "history": [],
   "id": "clone-convenience",
   "publishedAt": "2026-10-16",
   "readme": [
-    "版本 0.1.0，EveJS 0.12.9，启动器注入总线 API 1。",
-    "在启动器模组页启用后，重启服务端并重新登录客户端。文件已放入模组目录不代表正在运行的服务已加载。源码版本不匹配会明确拒绝加载。",
-    "停用后重启恢复原版；已有同站多个克隆不自动删除。原版随后跳跃可能覆盖原站克隆，停用前请整理并保护植入体。中文名称与植入体刷新基础修复不包含在本模组中。",
-    "离线验证（仓库根目录）：",
-    "```powershell\nnode --test EveJS/mods/clone-convenience/tests/*.test.cjs\nnode EveJS/mods/clone-convenience/tools/check_bus.cjs EveJS/_launcher/mods/mod-host.js\n```",
-    "测试使用隔离依赖，不读取或写入实际角色存档。游戏内验收另行执行。"
+    "取消克隆跳跃冷却，允许在普通空间站存放多个克隆，方便切换植入体配置与活动地点。",
+    "启用后重启游戏服务端并重新登录。克隆总数仍受技能限制，安装与激活费用、玩家建筑限制保持原有规则。",
+    "停用前请整理同一空间站内的多个克隆并保护植入体，避免恢复原有跳跃规则后覆盖已有克隆。"
   ],
   "repo": "https://github.com/MateralCMX/evejs-mod-clone-convenience",
   "requiresRestart": true,
